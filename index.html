@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1024 height=768></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -58,13 +58,13 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Web Builds.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Web Builds.data.gz",
-        frameworkUrl: buildUrl + "/Web Builds.framework.js.gz",
-        codeUrl: buildUrl + "/Web Builds.wasm.gz",
+        dataUrl: buildUrl + "/Web Builds.data",
+        frameworkUrl: buildUrl + "/Web Builds.framework.js",
+        codeUrl: buildUrl + "/Web Builds.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "MOUSE PLAY PRODUCTIONS",
         productName: "POO_VADERS",
-        productVersion: "1.2.3",
+        productVersion: "1.2.4",
         showBanner: unityShowBanner,
       };
 
@@ -82,8 +82,8 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1024px";
+        canvas.style.height = "768px";
       }
       loadingBar.style.display = "block";
 
